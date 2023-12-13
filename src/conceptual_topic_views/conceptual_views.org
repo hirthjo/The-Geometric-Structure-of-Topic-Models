@@ -1,0 +1,247 @@
+* Conceptual Views Core
+** Namespace
+#+BEGIN_SRC clojure
+(ns conceptual-topic-views.core
+  (:require
+   [conexp.base :refer :all]
+   [conexp.fca.contexts :refer :all]
+   [conexp.io.contexts :refer :all]
+   [conexp.fca.pqcores :refer :all]
+   [conexp.fca.lattices :refer :all]))
+#+END_SRC
+
+** Globals
+*** Topics
+#+BEGIN_SRC clojure
+(def topic-names 
+  {"0" "Bayesian Inference"
+   "1" "Search Engines"
+   "2" "Neural Networks"
+   "3" "Nonlinear Control"
+   "4" "Optimization"
+   "5" "Neurons, Dynamic Networks"
+   "6" "Classification, Mining"
+   "7" "Information Retrieval"
+   "8" "Social Media"
+   "9" "Clustering"
+   "10" "Learning, Knowledge Bases"
+   "11" "Semantic Web"
+   "12" "Recommender Systems"
+   "13" "Graphs"
+   "14" "Reinforcement Learning"
+   "15" "Planning & Reasoning"
+   "16" "Document Retrieval"
+   "17" "Feature Extraction"
+   "18" "Support Vector Machines"
+   "19" "Kernel Methods"
+   "20" "Matrix Methods"
+   "21" "Image Recognition"})
+#+END_SRC
+Authors and Venues of interest
+#+BEGIN_SRC clojure
+(def authors #{"JIAWEIHAN" "SEBASTIANTHRUN" "CHRISTOSFALOUTSOS"
+               "WOLFGANGNEJDL" "BERNHARDSCHÖLKOPF" "DIETERFOX"})
+
+(def venues #{"IEEETRANSACTIONSONNEURALNETWORKS"
+  "IEEETRANSACTIONSONNEURALNETWORKSANDLEARNINGSYSTEMS" "IJCAI"
+  "RECSYS" "NEURALPROCESSINGLETTERS" "ECML" "NIPS"
+  "NEURALCOMPUTATION" "COLT" "KDD" "NEURALNETWORKS"})
+#+END_SRC
+*** Conceptual View Parameters
+#+BEGIN_SRC clojure
+(def delta 0.25)
+
+(def core-p 2)
+(def core-q 8)
+
+(def min-sup 0.03)
+(def min-conf 0.5)
+#+END_SRC
+** Read topic contexts
+Scales are computed in [[experiment-scaling-concepts.org]] 
+Valid deltas are 0.9 to 0.1 in 0.1 steps and 0.25
+#+BEGIN_SRC clojure
+(defn author_view [author delta]
+  (rename-attributes 
+   (read-context (str "data/author_views/" author "/" author "_" delta ".ctx") :named-binary-csv)
+   topic-names))
+
+(defn venue_view [venue delta]
+  (rename-attributes 
+   (read-context (str "data/venue_views/" venue "/" venue "_" delta ".ctx") :named-binary-csv)
+   topic-names))
+#+END_SRC
+** Compute Conceptual Views
+#+BEGIN_SRC clojure
+(defn view_zoom [ctx]
+  (-> ctx
+      (compute-core core-p core-q)))
+
+(defn conceptual_view_zoom [ctx]
+  (-> ctx
+      (iceberg-lattice min-sup)))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(defn zoomed_author_view [name]
+  (-> name
+      (author_view delta)
+      view_zoom))
+
+(defn zoomed_author_conceptual_view [name]
+  (-> name
+      zoomed_author_view
+      conceptual_view_zoom))
+
+(defn zoomed_venue_view [name]
+  (-> name
+      (venue_view delta)
+      view_zoom))
+
+(defn zoomed_venue_conceptual_view [name]
+  (-> name
+      zoomed_venue_view
+      conceptual_view_zoom))
+#+END_SRC
+** Fake Titanics etc
+Conexp-clj titanic is to slow
+#+BEGIN_SRC clojure
+(defn fake-titanic [ctx minsup]
+  (let [size (-> ctx objects count)]
+    (asd-> ctx $
+           concepts
+           (filter #(<= minsup (/
+                                (-> % first count) 
+                                size)
+                       ) $)
+           (make-lattice-nc $
+                       (fn <= [[A _] [C _]]
+                         (subset? A C))
+                       (fn inf [[A _] [C _]]
+                         (let [A+C (intersection A C)]
+                           [A+C (object-derivation ctx A+C)]))
+                       (fn sup [[_ B] [_ D]]
+                         (let [B+D (intersection B D)]
+                           [(attribute-derivation ctx B+D) B+D]))) ) ))
+
+
+(defn botless-lattice 
+  [ctx]
+  (let [semi-lattice
+        (->> ctx
+             concepts
+             (sort-by (comp count first))
+             rest)]
+    (make-lattice-nc semi-lattice (fn <= [[A _] [C _]]
+                       (subset? A C))
+                     (fn inf [[A _] [C _]]
+                       (let [A+C (intersection A C)]
+                         [A+C (object-derivation ctx A+C)]))
+                     (fn sup [[_ B] [_ D]]
+                       (let [B+D (intersection B D)]
+                         [(attribute-derivation ctx B+D) B+D])))))
+
+(defn concepts-to-order
+  [ctx concepts]
+  (make-lattice-nc concepts (fn <= [[A _] [C _]]
+                       (subset? A C))
+                     (fn inf [[A _] [C _]]
+                       (let [A+C (intersection A C)]
+                         [A+C (object-derivation ctx A+C)]))
+                     (fn sup [[_ B] [_ D]]
+                       (let [B+D (intersection B D)]
+                         [(attribute-derivation ctx B+D) B+D]))))
+
+
+(defn botless-lattice+ideal
+  [ctx attributes]
+  (->> ctx
+      concepts
+      (sort-by (comp count first))   rest ;; botless
+      (filter (fn [[A B]] 
+                (and (subset?  attributes B))))
+      (concepts-to-order ctx)))
+
+#+END_SRC
+
+** Paper to year map
+#+BEGIN_SRC clojure
+(defn get_author_paper_years []
+  (let [papers (slurp "data/author_paper_topics.csv")]
+    (reduce (fn [m line]
+              (let [input (clojure.string/split line #";")]
+                (if (= (count input) 4)
+                  (let [[y _ t _] input]
+                    (assoc m t y))
+                  m)))
+            {} (clojure.string/split papers #"\n"))))
+(defn get_venue_paper_years []
+  (let [papers (slurp "data/venue_paper_topics.csv")]
+    (reduce (fn [m line]
+              (let [input (clojure.string/split line #";")]
+                (if (= (count input) 4)
+                  (let [[y _ t _] input]
+                    (assoc m t y))
+                  m)))
+            {} (clojure.string/split papers #"\n"))))
+(defn get_paper_years [] (merge (venue_paper_years)
+                            (author_paper_years)))
+(defn paper_years (memorize get_paper_years))
+#+END_SRC
+annotate years
+#+BEGIN_SRC clojure
+(defn year-value-fn [[A B]]
+  (map (paper_years) A))
+#+END_SRC
+** Short Hand annotation for semi lattices
+*** Short hand count
+#+BEGIN_SRC clojure
+(defn valuation-count-annotated-objects [layout]
+  (let [E (connections layout)]
+    (fn [[A _ :as C]] 
+      (count (reduce (fn [short-hand-A A2] (difference short-hand-A A2)) A 
+              (->> E
+                   (filter #(= C (second %))) ; edges from C
+                   (map (comp first first)))) ; target extent
+              ))))
+#+END_SRC
+
+*** short hand notation extent size in years 
+absolute
+#+BEGIN_SRC clojure
+(defn valuation-count-annotated-objects-by-years [layout years]
+  (let [E (connections layout)
+        paper-year-filter (fn [paper]
+                            (contains? years                                        
+                              (Integer/parseInt 
+                                (let [year (paper_years paper)]
+                                  (if year year "0"))) ))]
+    (fn [[A _ :as C]] 
+      (->> (reduce (fn [short-hand-A A2] (difference short-hand-A A2)) A 
+                   (->> E
+                        (filter #(= C (second %))) ; edges from C
+                        (map (comp first first)))) ; target extent
+           (filter paper-year-filter)
+           count))))
+#+END_SRC
+relative
+#+BEGIN_SRC clojure
+(defn valuation-support-annotated-objects-by-years [layout years]
+  (let [E (connections layout)
+        paper-year-filter (fn [paper] (contains? years 
+                               (Integer/parseInt 
+                                (let [year (paper_years paper)]
+                                  (if year year "0"))) ))
+        n-count (->> layout 
+                     positions keys ; concepts
+                     (map first) ; extents
+                     (reduce union) ; base-set
+                     (filter paper-year-filter)
+                     count)]
+    (fn [[A _ :as C]] 
+      (asd->> A $
+        (filter paper-year-filter)
+        count
+        (/ $ n-count) float))))
+
+#+END_SRC

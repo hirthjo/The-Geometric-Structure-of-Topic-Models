@@ -1,0 +1,76 @@
+* Draw Conceptual Author/Venue Views
+** Namespase
+#+BEGIN_SRC clojure
+(ns conceptual-topic-views.draw
+  (:require
+   [conceptual-topic-views.core :refer :all]
+   [conexp.io.layouts :refer :all]
+   [conexp.layouts.base :refer :all]
+   [conexp.gui.draw :refer :all]))
+#+END_SRC
+
+** Conceptual Views
+*** Author Views
+#+BEGIN_SRC clojure
+(def thrun_view (zoomed_author_conceptual_view "SEBASTIANTHRUN"))
+
+(def schoelkopf_view (zoomed_author_conceptual_view "BERNHARDSCHÖLKOPF"))
+
+(def fox_view (zoomed_author_conceptual_view "DIETERFOX"))
+
+(def nejdl_view (zoomed_author_conceptual_view "WOLFGANGNEJDL"))
+#+END_SRC
+*** Venue Views
+#+BEGIN_SRC clojure
+(def ecml_view (zoomed_venue_conceptual_view "ECML"))
+
+(def recsys_view (zoomed_venue_conceptual_view "RECSYS"))
+
+(def nips_view (zoomed_venue_conceptual_view "NIPS"))
+
+(def nn_view (zoomed_venue_conceptual_view "NEURALNETWORKS"))
+#+END_SRC
+** Draw Lattices
+#+BEGIN_SRC clojure
+(defn draw-view [conceptual-view]
+  (let [L (inf-additive-layout conceptual-view)
+      value-fn (valuation-count-annotated-objects L)]
+    (-> L
+      (update-valuation valuefn)
+      draw-layout)))
+#+END_SRC
+*** Authors
+#+BEGIN_SRC clojure
+(draw-view fox_view)
+(draw-view schoelkopf_view)
+(draw-view thrun_view)
+(draw-view nejdl_view)
+#+END_SRC
+*** Venues
+#+BEGIN_SRC clojure
+(draw-view ecml_view)
+(draw-view recsys_view)
+(draw-view nips_view)
+(draw-view nn_view)
+#+END_SRC
+** Temporal Visualization
+#+BEGIN_SRC clojure
+(defn draw-temporal-view [name start end]
+  (let [L (-> name (str ".layout")  read-layout)
+      timespan (range start end)
+      value-fn (valuation-support-annotated-objects-by-years L (set timespan))]
+  (-> L
+      (update-valuations value-fn)
+      draw-layout)))
+#+END_SRC
+*** Nejdl
+#+BEGIN_SRC clojure
+(draw-temporal-view "nejdl" 1987 2000)
+(draw-temporal-view "nejdl" 2000 2009)
+(draw-temporal-view "nejdl" 2009 2022)
+#+END_SRC
+*** Recsys
+#+BEGIN_SRC clojure
+(draw-temporal-view "recsys" 2000 2015)
+(draw-temporal-view "recsys" 2015 2022)
+#+END_SRC

@@ -1,0 +1,338 @@
+* Topic Space Scale
+** Imports
+#+BEGIN_SRC clojure
+(ns topic-scale
+  (:require [conceptual-topic-views.core :refer :all]
+            [libpython-clj2.require :refer [require-python]]
+            [libpython-clj2.python :refer [py. py.. py.-] :as py]
+            [tech.v3.datatype :as dtype]
+            [conexp.fca.contexts :refer :all]
+            [conexp.io.contexts :refer :all]
+            [conexp.gui.draw :refer :all]
+            [conexp.base :refer :all]
+            [conexp.fca.lattices :refer :all]))
+#+END_SRC
+*** [[https://clj-python.github.io/libpython-clj/Usage.html][libpython-clj2]]
+#+BEGIN_SRC clojure
+(py/from-import gensim.models Nmf)
+(py/from-import gensim.corpora.dictionary Dictionary)
+(py/from-import gensim.models.tfidfmodel TfidfModel)
+(py/from-import sklearn.metrics.pairwise cosine_similarity)
+(py/from-import nltk.stem PorterStemmer)
+(require-python '[seaborn :as sns])
+(require-python '[pandas :as pd])
+(require-python '[matplotlib.pyplot :as plt])
+(require-python '[networkx :as nx])
+(require-python '[numpy :as np])
+#+END_SRC
+** Constants                                                        :globals:
+Do not rebind!
+#+BEGIN_SRC clojure
+(def topics (range 22))
+(def topics-by-names (map (comp topic-names str) topics))
+#+END_SRC
+** Load Topic Model and dictionary                                  :globals:
+Do not rebind!
+#+BEGIN_SRC clojure
+(def nmfmodel (py. Nmf load "topic_model/nmfmodel"))
+(def dictionary (py. Dictionary load "topic_model/dictionary.gz"))
+#+END_SRC
+*** Cosine Similarity between all topics
+#+BEGIN_SRC clojure
+(def topic-similarity-dataframe 
+  (let [topics (py. nmfmodel get_topics)
+        topic-similarities (cosine_similarity topics)]
+    (pd/DataFrame topic-similarities
+                  :columns topics-by-names
+                  :index topics-by-names)))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(def cluster-order (let [cm (sns/clustermap topic-similarity-dataframe)
+                         _cluster-order (asd-> cm $
+                                              (py.-  fig)
+                                              (py.  get_axes)
+                                              (py/get-item  2)
+                                              (py.  get_xticklabels)
+                                              (map #(py. % get_text) $))]
+                     (py. (py.- cm fig) clear)
+                     _cluster-order))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(let [cm (sns/clustermap (py/get-item (py/get-attr topic-similarity-dataframe :loc) cluster-order)
+                         :row_cluster false
+                         :vmax 0.34
+                         :cbar_pos [0.1 0.22 0.03 0.61])]
+           (plt/show))
+#+END_SRC
+
+** Top Terms
+#+BEGIN_SRC clojure
+(defn get-term-name [term-id]
+  (py. dictionary __getitem__ term-id))
+
+(defn get-n-top-terms-for-topic [topic n]
+  (let [top-n-term-ids+weight (py. nmfmodel get_topic_terms topic n)]
+    (map (fn [[term-id weight]] (get-term-name term-id)) top-n-term-ids+weight)))
+
+(defn get-n-top-terms-for-topics [n]
+  (reduce
+   (fn [topic-term-map topic]
+     (let [terms (get-n-top-terms-for-topic topic n)]
+       (assoc topic-term-map topic terms)))
+   (hash-map)
+   topics))
+#+END_SRC
+** Topic Term Scale
+#+BEGIN_SRC clojure
+(defn extract-top-terms [n-top-terms-for-topics]
+  (reduce clojure.set/union (vals n-top-terms-for-topics)))
+
+(defn generate-top-terms-incidence [n-top-terms-for-topics]
+  (fn [topic term] 
+    (let [topic-terms (get n-top-terms-for-topics topic)]
+      (-> topic-terms set
+          (contains? term)))))
+
+(defn top-n-topic-term-scale [n]
+  (let [n-top-terms-for-topics (get-n-top-terms-for-topics n)
+        top-terms (extract-top-terms n-top-terms-for-topics)
+        top-terms-incidence (generate-top-terms-incidence n-top-terms-for-topics)]
+    (-> (make-context topics top-terms top-terms-incidence)
+        (rename-objects (comp topic-names str)))))
+#+END_SRC
+** Analysis 
+#+BEGIN_SRC clojure
+(def x (range 5 55 5))
+(def y (for [n x]
+         (-> n top-n-topic-term-scale reduce-attributes concepts count)))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(let [ax (sns/lineplot :x x :y y)]
+  (do (py. ax set 
+           :xlabel "Top n Terms" 
+           :ylabel "Number of Concepts"
+           :font_scale 2)
+      (plt/show)))
+#+END_SRC
+** Iceberg
+Stemming
+#+BEGIN_SRC clojure
+(def ps (PorterStemmer))
+;; (py. ps stem "programming")
+(defn stem-attributes [ctx]
+  (rename-attributes ctx #(py. ps stem %)))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(def term-clusters
+#{["queries" "query"]
+  ["spatial"]
+  ["kernel" "kernels"]
+  ["distributions" "distribution"]
+  ["object" "objects"]
+  ["topics" "topic"]
+  ["means" ]
+  ["mining"]
+  ["loop"]
+  ["engines" "engine"]
+  ["rule" "rules"]
+  ["agent" "agents"]
+  ["retrieval"]
+  ["media"]
+  ["semantic" "semantics"]
+  ["xml"]
+  ["online"]
+  ["gradient"]
+  ["model" "models"]
+  ["graphs" "graph"]
+  ["learning"]
+  ["recommendations" "recommendation" "recommender"]
+  ["web" ]
+  ["inference"]
+  ["cluster" "clusters" "clustering"]
+  ["tasks" "task"]
+  ["influence"]
+  ["reasoning"]
+  ["pages" "page"]
+  ["collaborative"]
+  ["probability"  "probabilistic"]
+  ["latent" ]
+  ["class" "classifiers" "classification" "classifier"]
+  ["image" "images" ]
+  ["gaussian" ]
+  ["neuron" "neurons" "neural"]
+  ["activity" "action"]
+  ["machines"]
+  ["services"]
+  ["structure"]
+  ["label" "labels" "labeled"]
+  ["dimensionality" "dimensional"]
+  ["inline"]
+  ["term" ]
+  ["matrix"]
+  ["people"]
+  ["user" "users"]
+  ["estimation" "estimator" "estimators"]
+  ["tracking"]
+  ["relevance"]
+  ["ensemble" ]
+  ["fuzzy"]
+  ["convex"]
+  ["rank" "ranking"]
+  ["click"]
+  ["twitter"]
+  ["decision"]
+  ["networks" "network"]
+  ["algorithm" "algorithms"]
+  ["feature" "features"]
+  ["similarity"]
+  ["feedback"]
+  ["document" "documents" ]
+  ["ir"]
+  ["math"]
+  ["nn" ]
+  ["value"]
+  ["logic" ]
+  ["items" "item"]
+  ["svm" "svms"]
+  ["support"]
+  ["firing"]
+  ["vertices"]
+  ["linear"]
+  ["spiking" "spike"]
+  ["vector"]
+  ["robot"]
+  ["problems"]
+  ["tree" "trees"]
+  ["text"]
+  ["stability"]
+  ["domain"]
+  ["filtering"]
+  ["deep"]
+  ["content"]
+  ["nonlinear"]
+  ["knowledge"]
+  ["functions" "function"]
+  ["control" "controller"]
+  ["time"]
+  ["policies" "policy"]
+  ["visual"]
+  ["variables"]
+  ["transfer" ]
+  ["input"]
+  ["convergence"]
+  ["nodes" "node"]
+  ["adaptive"]
+  ["sparse"]
+  ["planning"]
+  ["edges"]
+  ["recurrent"]
+  ["optimization"]
+  ["variational"]
+  ["target"]
+  ["sets"]
+  ["hidden"]
+  ["recognition"]
+  ["social"]
+  ["bayesian"]
+  ["information"]
+  ["selection"]
+  ["patterns"]
+  ["posterior"]
+  ["layer"]
+  ["language"]
+  ["reinforcement" ]
+  ["formula"]
+  ["delays" ]
+  ["synaptic"]
+  ["training"]
+  ["entity" "entities"]
+  ["reward"]
+  ["multi"]
+  ["search"]
+  ["data" ]
+  ["view"]
+  ["density"]
+  ["spectral"]
+  ["loss" ]
+  ["systems"]
+  ["subgraph"]
+  ["tex"]
+  ["segmentation"]
+  ["scene"]
+  ["preferences"]
+  ["regression"]
+  ["supervised"]})
+
+
+(defn rename-by-termcluster [term]
+  (some (fn [term-cluster] 
+          (when (.contains term-cluster term) 
+            (first term-cluster)))
+        term-clusters))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(def topic-term-ctx (-> 10
+         top-n-topic-term-scale
+         (rename-attributes rename-by-termcluster)))
+
+(-> topic-term-ctx
+    dual-context
+    botless-lattice
+    (draw-lattice))
+#+END_SRC
+*** projection
+#+BEGIN_SRC clojure
+
+(defn common-attributes? [ctx]
+  (fn [o1 o2] 
+    (let [common-attributes (intersection  (object-derivation ctx #{o1})
+                                           (object-derivation ctx #{o2}))]
+      (-> common-attributes empty? not))))
+
+(defn project-context [ctx] 
+  (make-context (objects ctx) 
+                (objects ctx)
+                (common-attributes? ctx)))
+
+(defn irreflexiv [edge-col]
+  (filter (fn [[a b]] (not= a b)) edge-col))
+
+(def topic-topic-edges (->> topic-term-ctx 
+                            project-context
+                            incidence-relation 
+                            irreflexiv))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(def topic-network (let [G (nx/Graph)]
+                      (py. G add_edges_from topic-topic-edges)
+                      G))
+(def topic-network-layout (nx/spring_layout topic-network))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(do (nx/draw topic-network :with_labels true
+                       :pos topic-network-layout)
+    (plt/show))
+#+END_SRC
+
+** zoom
+#+BEGIN_SRC clojure
+(defn zoom-on-topics [n-terms topic-set]
+  (let [ctx (top-n-topic-term-scale 30)]
+    (-> ctx
+        (stem-attributes)
+        dual-context
+        (botless-lattice+ideal topic-set)
+        draw-lattice)))
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(zoom-on-topics 30 #{"Neural Networks"})
+
+#+END_SRC

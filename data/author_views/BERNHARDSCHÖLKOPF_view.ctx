@@ -1,0 +1,556 @@
+title,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+Nonlinear Component Analysis as a Kernel Eigenvalue Problem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+A tutorial on support vector regression,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Estimating the Support of a High-Dimensional Distribution,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Learning with Local and Global Consistency,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+A Kernel Two-Sample Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Kernel Principal Component Analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+A Kernel Method for the Two-Sample-Problem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+New Support Vector Algorithms,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Measuring Statistical Dependence with Hilbert-Schmidt Norms,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Support Vector Method for Novelty Detection,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Large Scale Multiple Kernel Learning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Integrating structured biological data by Kernel Maximum Mean Discrepancy,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+A Generalized Representer Theorem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Kernel PCA and De-Noising in Feature Spaces,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"Learning with Hypergraphs: Clustering, Classification, and Embedding",0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+Input space versus feature space in kernel-based methods,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Learning to Rank with Nonsmooth Cost Functions,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A Hilbert Space Embedding for Distributions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Ranking on Data Manifolds,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+A Kernel Statistical Test of Independence,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Nonlinear causal discovery with additive noise models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Recording and Playback of Camera Shake: Benchmarking Blind Deconvolution with a Real-World Database,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Use of the Zero-Norm with Linear Models and Kernel Methods,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Wasserstein Auto-Encoders,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Training Invariant Support Vector Machines,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EnhanceNet: Single Image Super-Resolution Through Automated Texture Synthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Common sequence polymorphisms shaping genetic diversity in Arabidopsis thaliana.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TrueSkill™: A Bayesian Skill Rating System,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hilbert Space Embeddings and Metrics on Probability Measures,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+A kernel view of the dimensionality reduction of manifolds,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+Learning from labeled and unlabeled data on a directed graph,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kernel-based Conditional Independence Test and Application in Causal Discovery,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The Kernel Trick for Distances,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Improving the Accuracy and Speed of Support Vector Machines,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Kernel Measures of Conditional Dependence,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+The connection between regularization operators and support vector kernels,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Iterative kernel principal component analysis for image modeling,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Kernel Methods for Measuring Independence,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Predicting Time Series with Support Vector Machines,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+A Local Learning Approach for Clustering,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Where did I take that snapshot? Scene-based homing by image matching,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Information-geometric approach to inferring causal directions,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Domain Adaptation under Target and Conditional Shift,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Kernel Dependency Estimation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Advances in kernel methods: support vector learning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Recovering Intrinsic Images with a Global Sparsity Prior on Reflectance,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Extracting Support Data for a Given Task,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+The Randomized Dependence Coefficient,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Fast protein classification with multiple networks,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Structure and dynamics of information pathways in online media,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Methods in Computational Biology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Causal Inference Using the Algorithmic Markov Condition,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fast removal of non-uniform camera shake,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+An Empirical Analysis of Domain Adaptation Algorithms for Genomic Sequence Analysis,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+"Learning with Kernels: support vector machines, regularization, optimization, and beyond",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+Estimating a Kernel Fisher Discriminant in the Presence of Label Noise,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Kernel Mean Embedding of Distributions: A Review and Beyonds,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+A Regularization Framework for Learning from Graph Data,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Efficient filter flow for space-variant multiframe blind deconvolution,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Causal discovery with continuous additive noise models,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+A Machine Learning Approach for Non-blind Image Deconvolution,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+DiSMEC: Distributed Sparse Machines for Extreme Multi-label Classification,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+On the empirical estimation of integral probability metrics,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Cluster Kernels for Semi-Supervised Learning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+Shrinking the Tube: A New Support Vector Regression Algorithm,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Automatic Image Colorization Via Multimodal Predictions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+AdaGAN: Boosting Generative Models,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Constructing Boosting Algorithms from SVMs: An Application to One-Class Classification,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Support Vector Machines and Kernel Methods: The New Generation of Learning Machines,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+Transductive Classification via Local Learning Regularization,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+Inferring deterministic causal relations,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Computationally efficient face detection,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Engineering Support Vector Machine Kerneis That Recognize Translation Initialion Sites,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+MRI-Based Attenuation Correction for PET/MRI: A Novel Approach Combining Pattern Recognition and Atlas Registration,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Regularization on Discrete Spaces,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"On a Kernel-Based Method for Pattern Recognition, Regression, Approximation, and Operator Inversion",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Statistical Learning Theory: Models, Concepts, and Results",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+High-Dimensional Graphical Model Selection Using ℓ1-Regularized Logistic Regression,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+A Nonparametric Approach to Bottom-Up Visual Saliency,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Learning from Distributions via Support Measure Machines,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Graph Laplacian Regularization for Large-Scale Semidefinite Programming,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Invariant Feature Extraction and Classification in Kernel Spaces,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Prior Knowledge in Support Vector Kernels,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+Prediction on a Graph with a Perceptron,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Incorporating Invariances in Support Vector Learning Machines,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+An Analysis of Inference with the Universum,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Kernel PCA pattern reconstruction via approximate pre-images.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Randomized Nonlinear Component Analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Isotonic Conditional Random Fields and Local Sentiment Flow,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Learning to Deblur,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Domain Adaptation with Conditional Transferable Components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"Fast Approximation of Support Vector Kernel Expansions, and an Interpretation of Clustering as Approximation in Feature Spaces",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Overlap and refractory effects in a brain-computer interface speller based on the visual P300 event-related potential.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Statistical Learning and Kernel Methods,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+RASE: recognition of alternatively spliced exons in C.elegans,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Kernel Choice and Classifiability for RKHS Embeddings of Probability Distributions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+View-Based Cognitive Mapping and Path Planning,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+On causal and anticausal learning,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+An online brain-computer interface based on shifting attention to concurrent streams of auditory stimuli.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Causal influence of gamma oscillations on the sensorimotor rhythm,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Constructing Descriptive and Discriminative Nonlinear Features: Rayleigh Coefficients in Kernel Feature Spaces,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+Center-surround patterns emerge as optimal predictors for human saccade targets.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Methods Towards Invasive Human Brain Computer Interfaces,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+From optimal transport to generative modeling: the VEGAN cookbook,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+The Need for Open Source Software in Machine Learning,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Learning View Graphs for Robot Navigation,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sparse kernel feature analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Transfer Learning in Brain-Computer Interfaces,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+A Permutation-Based Kernel Conditional Independence Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Non-rigid point set registration: Coherent Point Drift,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Graph-Based Visual Saliency,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+Multiple Instance Learning for Computer Aided Diagnosis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Modeling Information Propagation with Survival Theory,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Learning to Find Pre-Images,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+Identifying Cause and Effect on Discrete Data using Additive Noise Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linear programs for automatic accuracy control in regression,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+One-Class Support Measure Machines for Group Anomaly Detection,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Kernel machine based learning for multi-view face detection and pose estimation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Convex Repeated Games and Fenchel Duality,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sampling Techniques for Kernel Methods,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Interpolating Between Types and Tokens by Estimating Power-Law Generators ∗,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Optimization of k-space trajectories for compressed sensing by Bayesian experimental design.,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Movement templates for learning of hitting and batting,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Towards a Learning Theory of Cause-Effect Inference,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+On the Latent Space of Wasserstein Auto-Encoders,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+A Compression Approach to Support Vector Model Selection,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Probabilistic latent variable models for distinguishing between cause and effect,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Causal Inference on Discrete Data Using Additive Noise Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Deep Energy Estimator Networks,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Semi-supervised Learning on Directed Graphs,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+An Auditory Paradigm for Brain-Computer Interfaces,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Invariant Models for Causal Transfer Learning,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Kernel Methods for Implicit Surface Modeling,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Influence Maximization in Continuous Time Diffusion Networks,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Building Sparse Large Margin Classifiers,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Asymptotically Optimal Choice of ε-Loss for Support Vector Machines,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Discovering Causal Signals in Images,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+A tutorial on ν-support vector machines: Research Articles,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Uncovering the structure and temporal dynamics of information propagation,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Regression by dependence minimization and its application to causal inference in additive noise models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+A brain computer interface with online feedback based on magnetoencephalography,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Probabilistic movement modeling for intention inference in human–robot interaction,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Regularized principal manifolds,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Identification of causal relations in neuroimaging data with latent confounders: An instrumental variable approach,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A Unifying View of Wiener and Volterra Theory and Polynomial Kernel Regression,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Submodular Inference of Diffusion Networks from Multiple Trees,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Face Detection - Efficient and Rank Deficient,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+From Regularization Operators to Support Vector Kernels,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Learning from Labeled and Unlabeled Data Using Random Walks,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Space-Variant Single-Image Blind Deconvolution for Removing Camera Shake,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+From Variational to Deterministic Autoencoders,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Estimating Diffusion Network Structures: Recovery Conditions, Sample Complexity & Soft-thresholding Algorithm",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+The representer theorem for Hilbert spaces: a necessary and sufficient condition,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Switched Latent Force Models for Movement Segmentation,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Joint Kernel Maps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Data Integration for Classification Problems Employing Gaussian Process Priors,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Feature selection and transduction for prediction of molecular bioactivity for drug design,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Computing functions of random variables via reproducing kernel Hilbert space representations,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Shifts of Gamma Phase across Primary Visual Cortical Sites Reflect Dynamic Stimulus-Modulated Information Transfer,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Comparison of View-Based Object Recognition Algorithms Using Realistic 3D Models,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Seeing the Arrow of Time,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Injective Hilbert Space Embeddings of Probability Measures,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+A Direct Method for Building Sparse Kernel Learning Algorithms,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Adversarial Vulnerability of Neural Networks Increases With Input Dimension,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+A Kernel for Protein Secondary Structure Prediction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Training Support Vector Machines with Multiple Equality Constraints,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Causal Consistency of Structural Equation Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Semi-Supervised Domain Adaptation with Non-Parametric Copulas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Learning Blind Motion Deblurring,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Kernel Mean Estimation and Stein Effect,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Evaluating Predictive Uncertainty Challenge,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Discovering Temporal Causal Relations from Subsampled Data,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Incorporating invariances in nonlinear Support Vector Machines,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Robust EEG Channel Selection across Subjects for Brain-Computer Interfaces,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+How to Find Interesting Locations in Video: A Spatiotemporal Interest Point Detector Learned from Human Eye Movements,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Telling cause from effect based on high-dimensional observations,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Discriminative k-shot learning using probabilistic models,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Quantifying Information Overload in Social Media and Its Impact on Social Contagions,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Identifiability of Causal Graphs using Functional Models,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"Kernels, regularization and differential equations",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Gaussian Process-Based Predictive Control for Periodic Error Correction,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Inference of Cause and Effect with Unsupervised Inverse Regression,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Support Vector Novelty Detection Applied to Jet Engine Vibration Spectra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+A Kernel Approach to Comparing Distributions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Detecting the direction of causal time series,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sparse multiscale gaussian process regression,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+A Discussion of Semi-Supervised Learning and Transduction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Generalization Bounds via Eigenvalues of the Gram matrix,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+Tighter PAC-Bayes Bounds,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Multiframe blind deconvolution, super-resolution, and saturation correction via incremental EM",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Implicit Surface Modelling with a Globally Regularised Basis of Compact Support,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tailoring density estimation via reproducing kernel moment matching,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Multi-Source Domain Adaptation: A Causal View,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
+Robust Ensemble Learning,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cause-Effect Inference by Comparing Regression Errors,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+An improved training algorithm for kernel Fisher discriminants,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Semiparametric Support Vector and Linear Programming Machines,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Causal relationships between frequency bands of extracellular signals in visual cortex revealed by an information theoretic analysis,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Two-locus association mapping in subquadratic time,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Efficient Algorithms for Max-Margin Structured Classification,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bayesian Experimental Design of Magnetic Resonance Imaging Sequences,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A kernel-based causal learning algorithm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Non-parametric estimation of integral probability metrics,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Remote Sensing Feature Selection by Kernel Dependence Measures,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+Non-stationary correction of optical aberrations,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+A Short Introduction to Learning with Kernels,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Automatic 3D face reconstruction from single images or video,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+A few extreme events dominate global interannual variability in gross primary production,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Learning view graphs for robot navigation,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Bayesian Model Scoring in Markov Random Fields,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Algorithmic independence of initial condition and dynamical law in thermodynamics and causal inference,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Non-monotonic Poisson Likelihood Maximization,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Does Cognitive Science Need Kernels?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Support Vector methods in learning and feature extraction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Convolutional neural networks: a magic bullet for gravitational-wave detection?,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Local learning projections,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Inexact Matching String Kernels for Protein Classification,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Learning similarity measure for multi-modal 3D image registration,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Automated Hierarchy Discovery for Planning in Partially Observable Environments,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Learning Theory and Kernel Machines,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Fidelity-Weighted Learning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Telling cause from effect in deterministic linear dynamical systems,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Minimax Estimation of Maximum Mean Discrepancy with Radial Kernels,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The effect of artifacts on dependence measurement in fMRI.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Modeling General and Specific Aspects of Documents with a Probabilistic Topic Model,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Nonparametric dynamics estimation for time periodic systems,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Reinforcement Learning for Motor Primitives,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Hierarchical Dirichlet Processes with Random Effects,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+An Oracle Inequality for Clipped Regularized Risk Minimizers,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"Kernel Distribution Embeddings: Universal Kernels, Characteristic Kernels and Kernel Metrics on Distributions",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Learning Nonparametric Models for Probabilistic Imitation,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+On the Fairness of Disentangled Representations,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Multi-way set enumeration in weight tensors,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Effects of Stimulus Type and of Error-Correcting Code Design on BCI Speller Performance,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Deconfounding Reinforcement Learning in Observational Settings,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Combining causal and similarity-based reasoning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Max-margin classification of incomplete data,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Inferring latent structures via information inequalities,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Closing the sensorimotor loop: Haptic feedback facilitates decoding of arm movement imagery,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Probabilistic Modeling of Human Movements for Intention Inference,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Entropy Numbers of Linear Function Classes,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Characteristic Kernels on Groups and Semigroups,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Detecting low-complexity unobserved causes,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Adversarial Extreme Multi-label Classification,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+Generalized Regularized Least-Squares Learning with Predefined Features in a Hilbert Space,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Spatio-Temporal Transformer Network for Video Restoration,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Regularized Principal Manifolds,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A recipe for optimizing a time-histogram,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Blind retrospective motion correction of MR images.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Blind Correction of Optical Aberrations,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Kernel Methods and Support Vector Machines,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Energy-Based Models,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A tutorial on kernel methods for categorization,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+Generalized Clustering via Kernel Embeddings,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Disentangling Factors of Variation Using Few Labels,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Local Group Invariant Representations via Orbit Embeddings,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Modeling confounding by half-sibling regression,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Towards Machine Learning of Motor Skills,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+A Review of Kernel Methods in Machine Learning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Detecting Confounding in Multivariate Linear Models via Spectral Analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Differentially Private Database Release via Kernel Mean Embeddings,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+A note on integral probability metrics and $\phi$-divergences,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Statistical analysis of coupled time series with Kernel Cross-Spectral Density operators,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Blind Motion Deblurring Using Image Statistics,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+From Ordinary Differential Equations to Structural Causal Models: the deterministic case,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Causal Inference by Choosing Graphs with Most Plausible Markov Kernels,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Removing noise from astronomical images using a pixel-specific noise model,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Context dependent amplification of both rate and event-correlation in a VLSI network of spiking neurons,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+End-to-End Learning for Image Burst Deblurring,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Implicit surface modelling as an eigenvalue problem,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Assessing attention and cognitive function in completely locked-in state with event-related brain potentials and epidural electrocorticography.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bayesian Kernel Methods,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Support Vector Machines as Probabilistic Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+A Tutorial Introduction,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+A Graphical Model Framework for Decoding in the Visual ERP-Based BCI Speller,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ja n 20 09 A Note on Integral Probability Metrics and φ-divergences,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The effect of patient positioning aids on PET quantification in PET/MR imaging,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Nonparametric Regression between General Riemannian Manifolds,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The View-Graph Approach to Visual Navigation and Spatial Memory,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mask-Specific Inpainting with Deep Neural Networks,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Classifying Event-Related Desynchronization in EEG, ECoG and MEG Signals",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Protein functional class prediction with a combined graph,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Balanced Graph Matching,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Machine Learning Applied to Perception: Decision Images for Gender Classification,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Approximate inference using planar graph decomposition,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Photorealistic Video Super Resolution,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Kernel-dependent support vector error bounds,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Kernel method for percentile feature extraction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+Support Vector Machines,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Efficient Approximations for Support Vector Machines in Object Detection,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Depth Estimation Through a Generative Model of Light Field Synthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Large Margin Component Analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Denoising and Dimension Reduction in Feature Space,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+Implicit Volterra and Wiener Series for Higher-Order Image Analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+"Entropy Numbers, Operators and Support Vector Kernels",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Retrospective Motion Correction of Magnitude-Input MR Images,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+First-Order Adversarial Vulnerability of Neural Networks and Input Dimension,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Robust Ensemble Learning for Data Mining,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Automatic particle picking using diffusion filtering and random forest classification,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Learning anticipation policies for robot table tennis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Generalization in anti-causal learning,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Learning strategies in table tennis using inverse reinforcement learning,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+Computing the Bayes Kernel Classifier,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+From Deterministic ODEs to Dynamic Structural Causal Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+On Matching Pursuit and Coordinate Descent,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Improving alpha matting and motion blurred foreground estimation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Part-based Probabilistic Point Matching using Equivalence Constraints,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Learning to Traverse Image Manifolds,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Data scarcity, robustness and extreme multi-label classification",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Detecting non-causal artifacts in multivariate linear regression models,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Theoretical Aspects of Cyclic Structural Causal Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Large scale genomic sequence SVM classifiers,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Kernel Mean Shrinkage Estimators,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Generalization performance of regularization networks and support vector machines via entropy numbers of compact operators,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Temporal and Cross-Subject Probabilistic Models for fMRI Prediction Tasks,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Hebbian algorithm for single-frame super-resolution,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+Learning similarity measure for multi-modal 3D image registration,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+1 Discrete Regularization,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+A brain-robot interface for studying motor learning after stroke,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Bayesian Online Detection and Prediction of Change Points,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Methods in Machine Learning 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Open Problem: Finding Good Cascade Sampling Processes for the Network Inference Problem,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CEST effect of agar: It’s not a neutral baseline for realistic CEST-MRI parameter optimization,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Approximate dual control maintaining the value of information with an application to building control,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sparse Representation for Signal Classification,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Feature extraction from the Hermitian manifold for Brain-Computer Interfaces,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+1 A primer on kernel methods,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Prediction of Glucose Tolerance without an Oral Glucose Tolerance Test,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Deep Nonlinear Non-Gaussian Filtering for Dynamical Systems,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Explorer Mixture Regression for Covariate Shift,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Implicit Surfaces with Globally Regularised and Compactly Supported Basis Functions,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Preface to the ACM TIST Special Issue on Causal Discovery and Inference,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Multivariate Regression with Stiefel Constraints,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+09401 Abstracts Collection - Machine learning approaches to statistical dependences and causality,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+No-regret Algorithms for Online Convex Programs,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Efficient Methods for Privacy Preserving Face Detection,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Causal Inference on Time Series using Structural Equation Models,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Adaptive Skip Intervals: Temporal Abstraction for Recurrent Dynamical Models,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gaussian Processes and SVM: Mean Field and Leave-One-Out,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Coordination via predictive assistants: time series algorithms and game-theoretic analysis,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A PAC-Bayes Risk Bound for General Loss Functions,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Gaussian and Wishart Hyperkernels,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Combining a Filter Method with SVMs,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Implicit Wiener Series for Higher-Order Image Analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Learning optimal striking points for a ping-pong playing robot,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+On the difference between building and extracting patterns: a causal analysis of deep generative models.,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel methods in medical imaging,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Subordinate class recognition using relational object models,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Experimental and causal view on information integration in autonomous agents,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+Learning an Interest Operator from Eye Movements,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Long Term Prediction of Product Quality in a Glass Manufacturing Process Using a Kernel Based Approach,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Feature Selection for Troubleshooting in Complex Assembly Lines,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+Beyond the Margin,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Causal and anti-causal learning in pattern recognition for neuroimaging,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Removing systematic errors for exoplanet search via latent causes,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Automatic estimation of modulation transfer functions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+The Unreasonable Effectiveness of Texture Transfer for Single Image Super-resolution,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+A New Algorithm for Improving the Resolution of Cryo-EM Density Maps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Linear Discriminant and Support Vector Classifiers,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Towards building a Crowd-Sourced Sky Map,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Semi-supervised Learning in Causal and Anticausal Settings,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Data Fusion with Kernel Methods,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+The Influence of the Image Basis on Modeling and Steganalysis Performance,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Dynamic Alignment Kernels,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+3D Reconstruction of Neural Circuits from Serial EM Images,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Optimal Coding in Biological and Artificial Neural Networks,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Intrinsic disentanglement: an invariance view for deep generative models,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Guest Editorial,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+Learnability and the doubling dimension,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Bayesian Image Super-resolution, Continued",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Dynamic Foreground/Background Extraction from Images and Videos using Random Patches,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Absence of EEG correlates of self-referential processing depth in ALS,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Mean Estimation via Spectral Filtering,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Aggregating Classification Accuracy across Time: Application to Single Trial EEG,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Learning as Search Optimization,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Multi-dynamic Bayesian Networks,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Causal reasoning by evaluating the complexity of conditional densities with kernel methods,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Dealing with large diagonals in kernel matrices : New trends in statistical information processing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Nonlinear Receptive Field Analysis: Making Kernel Methods Interpretable,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unsupervised Regression with Applications to Nonlinear System Identification,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"A method for determining a property map of an object, in particular for a living being, based on at least a first image, in particular magnetic resonance image",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Gaussian Process Belief Propagation,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Optimization of k-Space Trajectories by Bayesian Experimental Design,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Implicit Online Learning with Kernels,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Identification of the Default Mode Network with electroencephalography,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Image Retrieval and Classification Using Local Distance Functions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Maximal Margin Perception,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+HiFiVE: A Hilbert Space Embedding of Fiber Variability Estimates for Uncertainty Modeling and Visualization,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Conditional mean field,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Methods for Manifold Estimation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Recovery of non-linear cause-effect relationships from linearly mixed neuroimaging data,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New Directions for Learning with Kernels and Gaussian Processes (Dagstuhl Seminar 16481),1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Decoding index finger position from EEG using random forests,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Coordination via predictive assistants: time series algorithms and game-theoretic analysis,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Real Time Trajectory Prediction Using Deep Conditional Generative Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Spread-spectrum magnetic resonance imaging.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Multivariate Regression via Stiefel Manifold Constraints,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+Blind multirigid retrospective motion correction of MR images.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+A Kernel Approach for Learning from almost Orthogonal Patterns,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+Reducing Calibration Time For Brain-Computer Interfaces: A Clustering Approach,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Prototype classification: insights from machine learning.,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ODIN: ODE-Informed Regression for Parameter and State Inference in Time-Continuous Dynamical Systems,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Energy Functionals for Manifold-valued Mappings and Their Properties,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+easyGWAS: An integrated interspecies platform for performing genome-wide association studies,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Adaptor Grammars: A Framework for Specifying Compositional Nonparametric Bayesian Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Transductive Inference with Graphs,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+A General Regression Framework for Learning String-to-String Mappings,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Incorporating Prior Knowledge on Class Probabilities into Local Similarity Measures for Intermodality Image Registration,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Choosing /spl nu/ in support vector regression with different noise models-theory and experiments,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Fragmentation of slow wave sleep after onset of complete locked-in state.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Development of Brain-Computer Interface Systems,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BundleMAP: Anatomically Localized Features from dMRI for Detection of Disease,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+A Complexity-Distortion Approach to Joint Pattern Alignment,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Protein Structure and Function Fast protein classification with multiple networks,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+MYND: A Platform for Large-scale Neuroscientific Studies,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Manifold-valued Thin-Plate Splines with Applications in Computer Graphics,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Autofocusing‐based phase correction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Leave-One-Out Methods,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Implicit Wiener Series,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Artificial intelligence: Learning to see and act,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+A 32-channel multi-coil setup optimized for human brain shimming at 9.4T.,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+A Novel Gaussian Sum Smoother for Approximate Inference in Switching Linear Dynamical Systems,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Self-Calibration of Optical Lenses,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Analysis of cause-effect inference by comparing regression errors,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Causality: Objectives and Assessment,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Distinguishing Cause from Effect Based on Exogeneity,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A cognitive brain-computer interface for patients with amyotrophic lateral sclerosis.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lernen mit Kernen ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Finding dependencies between frequencies with the kernel cross-spectral density,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Beta Power May Meditate the Effect of Gamma-TACS on Motor Performance,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Improving the Caenorhabditis elegans Genome Annotation Using Machine Learning,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+1 Covariate Shift by Kernel Mean Matching,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+An Approach to Bounded Rationality,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Four-legged Walking Gait Control Using a Neuromorphic Chip Interfaced to a Support Vector Learning Algorithm,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Algorithms Distribution Embeddings in Reproducing Kernel Hilbert Spaces,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Improving Consequential Decision Making under Imperfect Predictions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+A selective attention multi-chip system with dynamic synapses and spiking neurons,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GACV for Support Vector Machines,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"Pattern recognition : 26th DAGM Symposium, Tübingen, Germany, August 30 - Sepember 1, 2004 : proceedings",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Cost-Sensitive Active Learning With Lookahead: Optimizing Field Surveys for Remote Sensing Data Classification,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+The Entropy Regularization Information Criterion,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A Bayesian Approach to Diffusion Models of Decision-Making and Response Time,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boosting Structured Prediction for Imitation Learning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Brain-computer interfacing in amyotrophic lateral sclerosis: Implications of a resting-state EEG analysis,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Supplementary Material to Kernel Mean Estimation and Stein Effect,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Counterfactuals uncover the modular structure of deep generative models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Kernel Mean Matching for Content Addressability of GANs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Differential Entropic Clustering of Multivariate Gaussians,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Ordinal Regression by Extended Binary Classification,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"On a Link Between Kernel Mean Maps and Fraunhofer Diffraction, with an Application to Super-Resolution Beyond the Diffraction Limit",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Kernel methods and dimensionality reduction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Kernel Methods for Extracting Local Image Semantics,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+SLEIPNIR: Deterministic and Provably Accurate Feature Expansion for Gaussian Process Regression with Derivatives,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Geometric entropy minimization (GEM) for anomaly detection and localization,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+Orthogonal Structure Search for Efficient Causal Discovery from Observational Data,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Personalized brain-computer interface models for motor rehabilitation,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Advances in Neural Information Processing Systems 16: Proceedings of the 2003 Conference,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Heterogeneous Data Comparison and Gene Selection with Kernel Canonical Correlation Analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Support Vectors and Statistical Mechanics,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+A blind deconvolution approach for pseudo CT prediction from MR image pairs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Invariant Gaussian Process Latent Variable Models and Application in Causal Discovery,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Maximal margin classification for metric spaces,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Entropy Numbers for Convex Combinations and MLPs,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A UTO-ENCODERS : LATENT DIMENSIONALITY AND RANDOM ENCODERS,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+A Cognitive Brain-Computer Interface for Patients with Amyotrophic Lateral Sclerosis,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Hebbian algorithm for iterative kernel principal component analysis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Optimizing Spatial Filters for BCI: Margin- and Evidence-Maximization Approaches,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Statistical image analysis and percolation theory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+Mutagenetic tree Fisher kernel improves prediction of HIV drug resistance from viral genotype,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Real-Time Fetal Heart Monitoring in Biomagnetic Measurements Using Adaptive Real-Time ICA,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kernel Methods for Detecting the Direction of Time Series,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Margin Distribution and Soft Margin,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Real-time adaptive information-theoretic optimization of neurophysiology experiments,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Convergence of Laplacian Eigenmaps,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Kernels and Support Vector Machines,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Causal models for debugging and control in cloud computing,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Adaptation and Robust Learning of Probabilistic Movement Primitives,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Towards denoising XMCD movies of fast magnetization dynamics using extended Kalman filter.,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gene Expression Analysis: Joint Feature Selection and Classifier Design,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Jointly learning trajectory generation and hitting point prediction in robot table tennis,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+On Estimation of Functional Causal Models: Post-Nonlinear Causal Model as an Example,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The Neurodynamics of Belief Propagation on Binary Markov Random Fields,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"An Incremental GEM Framework for Multiframe Blind Deconvolution, Super-Resolution, and Saturation Correction",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+No . TR-125 Kernel Methods for Implicit Surface Modeling,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Lernen mit Kernen Support-Vektor-Methoden zur Analyse hochdimensionaler Daten,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+v-Arc: Ensemble Learning in the Presence of Outliers,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Markerless 3D Face Tracking,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Diffeomorphic Dimensionality Reduction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Learning-based solution to phase error correction in T2*-weighted GRE scans,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Robust Learning via Cause-Effect Models,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"Structural Causal Models: Cycles, Marginalizations, Exogenous Reparametrizations and Reductions",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ST ] 4 N ov 2 01 6 Kernel-based Tests for Joint Independence,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+Semi-supervised Kernel Regression Using Whitened Function Classes,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Consistency of Causal Inference under the Additive Noise Model,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Identification of Time-Dependent Causal Model: A Gaussian Process Treatment,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Predicting spike times from subthreshold dynamics of a neuron,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Reproducing kernel Hilbert space semantics for probabilistic programs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+A Guided Task for Cognitive brain-Computer Interfaces,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Navigation mit Schnappschüssen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Prototype Classification: Insights from Machine Learning,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A note on the expected minimum error probability in equientropic channels,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Optimal Change-Detection and Spiking Neurons,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Popper, Falsification and the VC-dimension",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Handbook of Statistical Bioinformatics-ReadingSample,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+The Incomplete Rosetta Stone problem: Identifiability results for Multi-view Nonlinear ICA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Natural Regularization from Generative Models,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Approximate Correspondences in High Dimensions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+Simultaneous Implicit Surface Reconstruction and Meshing,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Large Margin Multi-channel Analog-to-Digital Conversion with Applications to Neural Prosthesis,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Analysis of Contour Motions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Towards a Strategy for Boosting Regressors,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Frequency peak features for low-channel classification in motor imagery paradigms,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Center-surround filters emerge from optimizing predictivity in a free-viewing task,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Support Vector Machines,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Classification of Faces in Man and Machine,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Detecting Humans via Their Pose,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Machine learning approaches to statistical dependences and causality Dagstuhl Seminar,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Learning from Multiple Sources,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Optimal Single-Class Classification Strategies,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nonlinear physically-based models for decoding motor-cortical population activity,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"BundleMAP: Anatomically localized classification, regression, and hypothesis testing in diffusion MRI",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+Generalized Support Vector Machines,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Quantum Mean Embedding of Probability Distributions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+A Theory of Retinal Population Coding,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Nanotechnology in the Environmental Health Sciences,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Support Vector Machines on a Budget,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Convex Cost Functions for Support Vector Regression,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Distinguishing between cause and effect via kernel-based complexity measures for conditional distributions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Modeling Structure via Graphical Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tinkering with black boxes: counterfactuals uncover modularity in generative models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+A Blind Deconvolution Approach for Improving the Resolution of Cryo-EM Density Maps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+A Tutorial Review of RKHS Methods in Machine Learning,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Single Channel Speech Separation Using Factorial Dynamics,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Identifying Finite Mixtures of Nonparametric Product Distributions and Causal Inference of Confounders,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Optimal Decision Making Under Strategic Behavior,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Implicit Wiener Series: Part I: Cross-Correlation vs. Regression in Reproducing Kernel Hilbert Spaces,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Linearly-solvable Markov decision problems,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+On the Identifiability and Estimation of Functional Causal Models in the Presence of Outcome-Dependent Selection,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Multidimensional Contrast Limited Adaptive Histogram Equalization,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Coordination via predictive assistants from a game-theoretic view,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+A ug 2 01 8 Theoretical Aspects of Cyclic Structural Causal Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Towards Robust and Specific Causal Discovery from fMRI,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Prediction on Spike Data Using Kernel Algorithms,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Spectral Clustering Predicts Tumor Tissue Heterogeneity Using Dynamic 18F-FDG PET: A Complement to the Standard Compartmental Modeling Approach,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Anticipatory action selection for human-robot table tennis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Statistical Modeling of Images with Fields of Gaussian Scale Mixtures,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+Analysis of Cause-Effect Inference via Regression Errors,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Minimal Logical Constraint Covering Sets,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Stratification Learning: Detecting Mixed Density and Dimensionality in High Dimensional Point Clouds,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Accepted for NIPS ’ 99 SV Estimation of a Distribution ’ s Support,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+On Estimation of Functional Causal Models: General Results and Application to the Post-Nonlinear Causal Model,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Closing One's eyes Affects amplitude modulation but not frequency modulation in a Cognitive BCI,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Competitive Training of Mixtures of Independent Deep Generative Models,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

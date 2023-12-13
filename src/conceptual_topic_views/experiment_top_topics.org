@@ -1,0 +1,45 @@
+* Top topics visualization
+** imports
+#+BEGIN_SRC python
+from gensim.models import Nmf
+from gensim.corpora.dictionary import Dictionary
+import matplotlib.pyplot as plt
+#+END_SRC
+
+** plot
+[[https://scikit-learn.org/stable/auto_examples/applications/plot_topics_extraction_with_nmf_lda.html#sphx-glr-auto-examples-applications-plot-topics-extraction-with-nmf-lda-py][plotting code]]
+#+BEGIN_SRC python
+def plot_top_words(model, feature_names, topic_names, n_top_words, title):
+    fig, axes = plt.subplots(5, 5, figsize=(30, 30), sharex=False)
+    axes = axes.flatten()
+    for topic_idx in range(model.num_topics):
+        topic = topic_names[topic_idx]
+        top_topics_terms = model.get_topic_terms(topic_idx,n_top_words)
+        top_terms = [dictionary[term] for term ,w in top_topics_terms]
+        top_terms_w = [w for term ,w in top_topics_terms]
+
+        ax = axes[topic_idx]
+        ax.barh(top_terms, top_terms_w, height=0.7)
+        ax.set_title(f"{topic}", fontdict={"fontsize": 15})
+        ax.invert_yaxis()
+        ax.set_xlim(0,0.043)
+        ax.tick_params(axis="both", which="major", labelsize=10)
+        for i in "top right left".split():
+            ax.spines[i].set_visible(False)
+    for empty_plot_idx in range(model.num_topics,25):
+        axes[empty_plot_idx].axis('off')
+
+    fig.suptitle(title, fontsize=25)
+    plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.5)
+    plt.show()
+#+END_SRC
+** Load data and execute
+#+BEGIN_SRC python
+nmfmodel = Nmf.load( "topic_model/nmfmodel")
+dictionary =  Dictionary.load( "topic_model/dictionary.gz")
+with open("topic_model/topicnames.txt") as f:
+     topics=[topic[:-1] for topic in f.readlines()]
+#+END_SRC
+#+BEGIN_SRC python
+plot_top_words(nmfmodel, dictionary, topics, 10, "Topic Model Top Ten Terms")
+#+END_SRC

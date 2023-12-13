@@ -1,0 +1,486 @@
+* Number of Concepts per threshold
+** imports
+#+BEGIN_SRC python
+import pandas as pd
+import numpy as np
+from concepts import compute_concepts
+#+END_SRC
+#+INCLUDE: "./scaling.org::#imports" :only-contents t
+
+** load an prepare data
+#+INCLUDE: "./scaling.org::#data" :only-contents t
+
+** All Author Concepts
+#+BEGIN_SRC python
+for delta in [0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.15,0.1]:
+    count = len(compute_concepts(scale_by_threshold(compute_context(author_papers),
+                                                    delta),
+                            f"author_papers_{delta}.ctx")) 
+    print(f"Delta {delta} produced {count} author concepts")
+#+END_SRC
+Concepts
+-    Delta 0.9 produced 23 author concepts
+-    Delta 0.8 produced 26 author concepts
+-    Delta 0.7 produced 27 author concepts
+-    Delta 0.6 produced 28 author concepts
+-    Delta 0.5 produced 36 author concepts
+-    Delta 0.4 produced 191 author concepts
+-    Delta 0.3 produced 296 author concepts
+-    Delta 0.2 produced 1443 author concepts
+-    Delta 0.15 produced 3797 author concepts
+-    Delta 0.1 produced 14823 author concepts
+empty papers
+-    Delta 0.9 WARNING: removed 258204
+-    Delta 0.8 WARNING: removed 253582
+-    Delta 0.7 WARNING: removed 244321
+-    Delta 0.6 WARNING: removed 226965
+-    Delta 0.5 WARNING: removed 196753
+-    Delta 0.4 WARNING: removed 149227
+-    Delta 0.3 WARNING: removed 81521
+-    Delta 0.2 WARNING: removed 14970
+-    Delta 0.15 WARNING removed 1541
+-    Delta 0.1 WARNING: removed 7
+** All Venue Concepts
+#+BEGIN_SRC python
+for delta in [0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.15,0.1]:
+    count = len(compute_concepts(scale_by_threshold(compute_context(venue_papers),
+                                                    delta),
+                            f"venue_papers_{delta}.ctx")) 
+    print(f"Delta {delta} produced {count} venue concepts")
+#+END_SRC
+Concepts
+-    Delta 0.9 produced 24 venue concepts
+-    Delta 0.8 produced 24 venue concepts
+-    Delta 0.7 produced 24 venue concepts
+-    Delta 0.6 produced 25 venue concepts
+-    Delta 0.5 produced 26 venue concepts
+-    Delta 0.4 produced 186 venue concepts
+-    Delta 0.3 produced 276 venue concepts
+-    Delta 0.2 produced 1153 venue concepts
+-    Delta 0.15 produced 2726 venue concepts
+-    Delta 0.1 produced 8935 venue concepts
+empty papers
+-    Delta 0.9 WARNING: removed 68588
+-    Delta 0.8 WARNING: removed 66285
+-    Delta 0.7 WARNING: removed 62513
+-    Delta 0.6 WARNING: removed 56157
+-    Delta 0.5 WARNING: removed 46121
+-    Delta 0.4 WARNING: removed 31485
+-    Delta 0.3 WARNING: removed 14307
+-    Delta 0.2 WARNING: removed 2012
+-    Delta 0.15 WARNING removed 194
+-    Delta 0.1 WARNING: removed 4
+
+
+** Conceptual views on authors/venues
+Targets
+#+BEGIN_SRC python
+# Topic Space Trajectories
+trajectroy_venues = {"IJCAI",
+                   "IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS",
+                   "IEEE TRANSACTIONS ON NEURAL NETWORKS",
+                   "NEURAL PROCESSING LETTERS", 
+                   "NIPS"}
+density_venues = {"ECML",
+                 "KDD",
+                 "COLT",
+                 "RECSYS",
+                 "NEURAL PROCESSING LETTERS",
+                 "NEURAL COMPUTATION",
+                 "NEURAL NETWORKS",
+                 "NIPS"}
+# Mapping Research Trajectories
+selected_author = {"SEBASTIAN THRUN",
+                  "CHRISTOS FALOUTSOS",
+                  "JIAWEI HAN",
+                  "WOLFGANG NEJDL"}
+trajectory_authors = {"SEBASTIAN THRUN",
+                     "BERNHARD SCHÖLKOPF",
+                     "JIAWEI HAN",
+                     "WOLFGANG NEJDL",
+                     "CHRISTOS FALOUTSOS",
+                     "DIETER FOX"}
+#+END_SRC
+
+Compute number of concepts
+#+BEGIN_SRC python
+venue_concepts = pd.DataFrame([],columns=["name",0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.25,0.2,0.15,0.1])
+for venue in trajectroy_venues.union(density_venues):
+    venue_title = venue
+    venue = venue.replace(" ","")
+    print(venue)
+    if not os.path.exists(f"venue_views/{venue}"):
+        os.makedirs(f"venue_views/{venue}")
+    single_venue_concepts = [venue]
+    for delta in [0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.25,0.2,0.15,0.1]:
+        ctx = venue_context(venue_papers,venue_title,delta)
+        if ctx.shape == (0,0):
+            print(f"Delta {delta} produced 0 incidences")
+            continue
+        count = len(compute_concepts(ctx, f"venue_views/{venue}/{venue}_{delta}.ctx"))
+        single_venue_concepts.append(count)
+        print(f"Delta {delta} produced {count} topic concepts for venue {venue}")
+    venue_concepts = venue_concepts.append(pd.DataFrame([single_venue_concepts],columns=["name",0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.25,0.2,0.15,0.1]),ignore_index=True)
+#+END_SRC
+dump
+#+BEGIN_SRC python
+venue_concepts.to_pickle("venue_views/venue_concepts.pkl")
+venue_concepts.to_csv("venue_views/venue_concepts.csv")
+#+END_SRC
+:Result:
+NEURALCOMPUTATION
+WARNING: removed 2881 objects
+WARNING: removed 17 attributes
+Delta 0.9 produced 7 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 2633 objects
+WARNING: removed 16 attributes
+Delta 0.8 produced 8 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 2364 objects
+WARNING: removed 12 attributes
+Delta 0.7 produced 12 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 2019 objects
+WARNING: removed 6 attributes
+Delta 0.6 produced 18 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 1634 objects
+WARNING: removed 6 attributes
+Delta 0.5 produced 18 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 1029 objects
+WARNING: removed 3 attributes
+Delta 0.4 produced 36 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 408 objects
+WARNING: removed 3 attributes
+Delta 0.3 produced 79 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 151 objects
+WARNING: removed 1 attributes
+Delta 0.25 produced 125 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 37 objects
+WARNING: removed 1 attributes
+Delta 0.2 produced 213 topic concepts for venue NEURALCOMPUTATION
+WARNING: removed 6 objects
+Delta 0.15 produced 409 topic concepts for venue NEURALCOMPUTATION
+Delta 0.1 produced 1008 topic concepts for venue NEURALCOMPUTATION
+NEURALNETWORKS
+WARNING: removed 3758 objects
+WARNING: removed 14 attributes
+Delta 0.9 produced 10 topic concepts for venue NEURALNETWORKS
+WARNING: removed 3631 objects
+WARNING: removed 12 attributes
+Delta 0.8 produced 12 topic concepts for venue NEURALNETWORKS
+WARNING: removed 3409 objects
+WARNING: removed 5 attributes
+Delta 0.7 produced 19 topic concepts for venue NEURALNETWORKS
+WARNING: removed 3072 objects
+WARNING: removed 4 attributes
+Delta 0.6 produced 20 topic concepts for venue NEURALNETWORKS
+WARNING: removed 2522 objects
+WARNING: removed 3 attributes
+Delta 0.5 produced 21 topic concepts for venue NEURALNETWORKS
+WARNING: removed 1630 objects
+WARNING: removed 1 attributes
+Delta 0.4 produced 43 topic concepts for venue NEURALNETWORKS
+WARNING: removed 699 objects
+Delta 0.3 produced 107 topic concepts for venue NEURALNETWORKS
+WARNING: removed 301 objects
+Delta 0.25 produced 155 topic concepts for venue NEURALNETWORKS
+WARNING: removed 67 objects
+Delta 0.2 produced 261 topic concepts for venue NEURALNETWORKS
+WARNING: removed 4 objects
+Delta 0.15 produced 536 topic concepts for venue NEURALNETWORKS
+Delta 0.1 produced 1368 topic concepts for venue NEURALNETWORKS
+IJCAI
+WARNING: removed 7286 objects
+WARNING: removed 12 attributes
+Delta 0.9 produced 12 topic concepts for venue IJCAI
+WARNING: removed 6998 objects
+WARNING: removed 3 attributes
+Delta 0.8 produced 21 topic concepts for venue IJCAI
+WARNING: removed 6508 objects
+WARNING: removed 2 attributes
+Delta 0.7 produced 22 topic concepts for venue IJCAI
+WARNING: removed 5733 objects
+WARNING: removed 1 attributes
+Delta 0.6 produced 23 topic concepts for venue IJCAI
+WARNING: removed 4572 objects
+Delta 0.5 produced 24 topic concepts for venue IJCAI
+WARNING: removed 3155 objects
+Delta 0.4 produced 70 topic concepts for venue IJCAI
+WARNING: removed 1461 objects
+Delta 0.3 produced 156 topic concepts for venue IJCAI
+WARNING: removed 686 objects
+Delta 0.25 produced 232 topic concepts for venue IJCAI
+WARNING: removed 202 objects
+Delta 0.2 produced 430 topic concepts for venue IJCAI
+WARNING: removed 16 objects
+Delta 0.15 produced 903 topic concepts for venue IJCAI
+WARNING: removed 1 objects
+Delta 0.1 produced 2473 topic concepts for venue IJCAI
+KDD
+WARNING: removed 3032 objects
+WARNING: removed 15 attributes
+Delta 0.9 produced 9 topic concepts for venue KDD
+WARNING: removed 2982 objects
+WARNING: removed 10 attributes
+Delta 0.8 produced 14 topic concepts for venue KDD
+WARNING: removed 2883 objects
+WARNING: removed 6 attributes
+Delta 0.7 produced 18 topic concepts for venue KDD
+WARNING: removed 2679 objects
+WARNING: removed 3 attributes
+Delta 0.6 produced 21 topic concepts for venue KDD
+WARNING: removed 2327 objects
+WARNING: removed 1 attributes
+Delta 0.5 produced 23 topic concepts for venue KDD
+WARNING: removed 1759 objects
+Delta 0.4 produced 41 topic concepts for venue KDD
+WARNING: removed 1012 objects
+Delta 0.3 produced 118 topic concepts for venue KDD
+WARNING: removed 611 objects
+Delta 0.25 produced 182 topic concepts for venue KDD
+WARNING: removed 244 objects
+Delta 0.2 produced 306 topic concepts for venue KDD
+WARNING: removed 26 objects
+Delta 0.15 produced 654 topic concepts for venue KDD
+Delta 0.1 produced 1894 topic concepts for venue KDD
+IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 1350 objects
+WARNING: removed 20 attributes
+Delta 0.9 produced 4 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 1300 objects
+WARNING: removed 15 attributes
+Delta 0.8 produced 9 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 1227 objects
+WARNING: removed 12 attributes
+Delta 0.7 produced 12 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 1133 objects
+WARNING: removed 7 attributes
+Delta 0.6 produced 17 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 943 objects
+WARNING: removed 6 attributes
+Delta 0.5 produced 18 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 634 objects
+WARNING: removed 3 attributes
+Delta 0.4 produced 28 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 286 objects
+WARNING: removed 3 attributes
+Delta 0.3 produced 70 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 123 objects
+WARNING: removed 2 attributes
+Delta 0.25 produced 104 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 22 objects
+Delta 0.2 produced 168 topic concepts for venue IEEETRANSACTIONSONNEURALNETWORKS
+WARNING: removed 1 objects
+:END:
+#+BEGIN_SRC python
+author_concepts = pd.DataFrame([],columns=["name",0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.25,0.2,0.15,0.1])
+
+for author in selected_author.union(trajectory_authors):
+    author_name = author
+    author = author.replace(" ","")
+    print(author)
+    if not os.path.exists(f"author_views/{author}"):
+        os.makedirs(f"author_views/{author}")
+    single_author_concepts = [author]
+    for delta in [0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.25,0.2,0.15,0.1]:
+        ctx = author_context(author_papers,author_name,delta)
+        if ctx.shape[0] == 0 or ctx.shape[1]==0:
+            print(f"Delta {delta} produced 0 incidences")
+            continue
+        count = len(compute_concepts(ctx, f"author_views/{author}/{author}_{delta}.ctx"))
+        single_author_concepts.append(count)
+        print(f"Delta {delta} produced {count} topic concepts for author {author}")
+    author_concepts = author_concepts.append(pd.DataFrame([single_author_concepts],columns=["name",0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.25,0.2,0.15,0.1]),ignore_index=True)
+#+END_SRC
+dump
+#+BEGIN_SRC python
+author_concepts.to_pickle("author_views/author_concepts.pkl")
+author_concepts.to_csv("author_views/author_concepts.csv")
+#+END_SRC
+
+:Result:
+DIETERFOX
+WARNING: removed 325 objects
+WARNING: removed 22 attributes
+Delta 0.9 produced 2 topic concepts for author DIETERFOX
+WARNING: removed 323 objects
+WARNING: removed 20 attributes
+Delta 0.8 produced 4 topic concepts for author DIETERFOX
+WARNING: removed 316 objects
+WARNING: removed 18 attributes
+Delta 0.7 produced 6 topic concepts for author DIETERFOX
+WARNING: removed 302 objects
+WARNING: removed 17 attributes
+Delta 0.6 produced 7 topic concepts for author DIETERFOX
+WARNING: removed 272 objects
+WARNING: removed 14 attributes
+Delta 0.5 produced 10 topic concepts for author DIETERFOX
+WARNING: removed 217 objects
+WARNING: removed 10 attributes
+Delta 0.4 produced 15 topic concepts for author DIETERFOX
+WARNING: removed 139 objects
+WARNING: removed 5 attributes
+Delta 0.3 produced 28 topic concepts for author DIETERFOX
+WARNING: removed 78 objects
+WARNING: removed 2 attributes
+Delta 0.25 produced 42 topic concepts for author DIETERFOX
+WARNING: removed 25 objects
+WARNING: removed 1 attributes
+Delta 0.2 produced 66 topic concepts for author DIETERFOX
+WARNING: removed 3 objects
+WARNING: removed 1 attributes
+Delta 0.15 produced 129 topic concepts for author DIETERFOX
+Delta 0.1 produced 342 topic concepts for author DIETERFOX
+JIAWEIHAN
+WARNING: removed 890 objects
+WARNING: removed 19 attributes
+Delta 0.9 produced 5 topic concepts for author JIAWEIHAN
+WARNING: removed 877 objects
+WARNING: removed 17 attributes
+Delta 0.8 produced 7 topic concepts for author JIAWEIHAN
+WARNING: removed 842 objects
+WARNING: removed 13 attributes
+Delta 0.7 produced 11 topic concepts for author JIAWEIHAN
+WARNING: removed 744 objects
+WARNING: removed 8 attributes
+Delta 0.6 produced 16 topic concepts for author JIAWEIHAN
+WARNING: removed 638 objects
+WARNING: removed 6 attributes
+Delta 0.5 produced 18 topic concepts for author JIAWEIHAN
+WARNING: removed 459 objects
+WARNING: removed 2 attributes
+Delta 0.4 produced 26 topic concepts for author JIAWEIHAN
+WARNING: removed 258 objects
+WARNING: removed 1 attributes
+Delta 0.3 produced 56 topic concepts for author JIAWEIHAN
+WARNING: removed 144 objects
+Delta 0.25 produced 89 topic concepts for author JIAWEIHAN
+WARNING: removed 52 objects
+Delta 0.2 produced 158 topic concepts for author JIAWEIHAN
+WARNING: removed 6 objects
+Delta 0.15 produced 316 topic concepts for author JIAWEIHAN
+Delta 0.1 produced 788 topic concepts for author JIAWEIHAN
+SEBASTIANTHRUN
+WARNING: removed 376 objects
+WARNING: removed 21 attributes
+Delta 0.9 produced 3 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 374 objects
+WARNING: removed 20 attributes
+Delta 0.8 produced 4 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 369 objects
+WARNING: removed 19 attributes
+Delta 0.7 produced 5 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 352 objects
+WARNING: removed 15 attributes
+Delta 0.6 produced 9 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 318 objects
+WARNING: removed 11 attributes
+Delta 0.5 produced 13 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 264 objects
+WARNING: removed 8 attributes
+Delta 0.4 produced 18 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 167 objects
+WARNING: removed 6 attributes
+Delta 0.3 produced 31 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 104 objects
+WARNING: removed 3 attributes
+Delta 0.25 produced 51 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 50 objects
+WARNING: removed 2 attributes
+Delta 0.2 produced 89 topic concepts for author SEBASTIANTHRUN
+WARNING: removed 6 objects
+WARNING: removed 1 attributes
+Delta 0.15 produced 151 topic concepts for author SEBASTIANTHRUN
+Delta 0.1 produced 398 topic concepts for author SEBASTIANTHRUN
+CHRISTOSFALOUTSOS
+WARNING: removed 778 objects
+WARNING: removed 21 attributes
+Delta 0.9 produced 3 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 765 objects
+WARNING: removed 17 attributes
+Delta 0.8 produced 7 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 738 objects
+WARNING: removed 16 attributes
+Delta 0.7 produced 8 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 670 objects
+WARNING: removed 7 attributes
+Delta 0.6 produced 17 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 584 objects
+WARNING: removed 6 attributes
+Delta 0.5 produced 18 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 482 objects
+WARNING: removed 2 attributes
+Delta 0.4 produced 22 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 302 objects
+WARNING: removed 2 attributes
+Delta 0.3 produced 49 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 195 objects
+WARNING: removed 2 attributes
+Delta 0.25 produced 77 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 67 objects
+WARNING: removed 2 attributes
+Delta 0.2 produced 123 topic concepts for author CHRISTOSFALOUTSOS
+WARNING: removed 8 objects
+Delta 0.15 produced 256 topic concepts for author CHRISTOSFALOUTSOS
+Delta 0.1 produced 747 topic concepts for author CHRISTOSFALOUTSOS
+WOLFGANGNEJDL
+WARNING: removed 442 objects
+WARNING: removed 19 attributes
+Delta 0.9 produced 5 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 434 objects
+WARNING: removed 17 attributes
+Delta 0.8 produced 7 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 422 objects
+WARNING: removed 16 attributes
+Delta 0.7 produced 8 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 379 objects
+WARNING: removed 13 attributes
+Delta 0.6 produced 11 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 314 objects
+WARNING: removed 10 attributes
+Delta 0.5 produced 14 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 217 objects
+WARNING: removed 6 attributes
+Delta 0.4 produced 19 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 103 objects
+WARNING: removed 4 attributes
+Delta 0.3 produced 39 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 55 objects
+WARNING: removed 1 attributes
+Delta 0.25 produced 58 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 14 objects
+WARNING: removed 1 attributes
+Delta 0.2 produced 94 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 1 objects
+WARNING: removed 1 attributes
+Delta 0.15 produced 187 topic concepts for author WOLFGANGNEJDL
+WARNING: removed 1 attributes
+Delta 0.1 produced 387 topic concepts for author WOLFGANGNEJDL
+BERNHARDSCHÖLKOPF
+WARNING: removed 645 objects
+WARNING: removed 19 attributes
+Delta 0.9 produced 5 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 641 objects
+WARNING: removed 17 attributes
+Delta 0.8 produced 7 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 628 objects
+WARNING: removed 13 attributes
+Delta 0.7 produced 11 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 580 objects
+WARNING: removed 10 attributes
+Delta 0.6 produced 14 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 494 objects
+WARNING: removed 7 attributes
+Delta 0.5 produced 17 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 351 objects
+WARNING: removed 5 attributes
+Delta 0.4 produced 20 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 167 objects
+WARNING: removed 1 attributes
+Delta 0.3 produced 51 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 93 objects
+Delta 0.25 produced 80 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 28 objects
+Delta 0.2 produced 144 topic concepts for author BERNHARDSCHÖLKOPF
+WARNING: removed 1 objects
+Delta 0.15 produced 256 topic concepts for author BERNHARDSCHÖLKOPF
+Delta 0.1 produced 640 topic concepts for author BERNHARDSCHÖLKOPF
+:END:

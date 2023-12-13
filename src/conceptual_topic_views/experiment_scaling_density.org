@@ -1,0 +1,39 @@
+* Find Scaling threshold
+** imports
+#+BEGIN_SRC python
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+#+END_SRC
+
+#+INCLUDE: "./scaling.org::#imports" :only-contents t
+
+** load an prepare data
+#+INCLUDE: "./scaling.org::#data" :only-contents t
+
+
+** density plot prepare data 
+#+INCLUDE: "./scaling.org::#density" :only-contents t
+
+#+BEGIN_SRC python
+# mv ctx
+author_ctx = compute_context(author_papers)
+venue_ctx = compute_context(venue_papers)
+# values
+author_values = [t for row in author_ctx.values for t in row if t>0]
+venue_values = [t for row in venue_ctx.values for t in row if t>0]
+#+END_SRC
+
+#+BEGIN_SRC python
+x_agg, y_agg = agglomerative_values(author_values+venue_values)
+#+END_SRC
+** Make plot
+#+BEGIN_SRC python
+ax = sns.lineplot(x_agg,y_agg)
+sns.set(font_scale=2.5)
+ax.set_xlabel("Threshold")
+ax.set_ylabel("Density")
+
+plt.show()
+#+END_SRC

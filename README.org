@@ -1,0 +1,23 @@
+* The Geometric Structure of Topic Models
+This repository contains the code used for our analysis in The
+*Geometric Structure of Topic Models*. The topic model was computed
+by [[https://doi.org/10.1007/s11192-021-03931-0][Topic space trajectories]] based on
+[[https://github.com/allenai/s2orc]]. Detailed the used data and
+pre-processing can be found in the article.
+
+To run the experiments, you first have to retrieve the raw data (as
+discussed in [[https://doi.org/10.1007/s11192-021-03931-0][Topic space trajectories]]), apply the topic model and save
+the results in ~data/author_paper_topics.csv~ for the author
+embeddings and ~data/venue_paper_topics.csv~ for the venue
+embeddings. After that, you can either use org-tangle to generate the
+scripts from the org files or start a python/clojure REPL and copy
+paste each code block.
+
+The computed contexts that were used for the concept lattice diagrams
+are included in the ~data~ directory.
+
+The code in this repository falls under [[file:LICENSE][EPL-2.0]] license. 
+
+Please cite the following article when using the presented methods:
+
+/T. Hanika and J. Hirth. The Geometric Structure of Topic Models. 2023/

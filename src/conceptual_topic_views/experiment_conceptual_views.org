@@ -1,0 +1,37 @@
+* Conceptual Author/Venue Views
+** Namespase
+#+BEGIN_SRC clojure
+(ns conceptual-topic-views.concepts
+  (:require
+   [conceptual-topic-views.core :refer :all]))
+#+END_SRC
+
+** Concepts per Delta
+*** authors
+#+BEGIN_SRC clojure
+(doseq [a #{"SEBASTIANTHRUN" "BERNHARDSCHÖLKOPF" "DIETERFOX" "WOLFGANGNEJDL"}
+        t [0.1 0.2 0.25 0.3 0.4 0.5]]
+  (println a t ": " (-> a (compute_author_view t) concepts count)))
+#+END_SRC
+:RESULT:
+|                   | 0.1 | 0.2 | 0.25 | 0.3 | 0.4 | 0.5 |
+|-------------------+-----+-----+------+-----+-----+-----|
+| SEBASTIANTHRUN    | 398 |  89 | 51   | 31  | 18  | 13  |
+| BERNHARDSCHÖLKOPF | 640 | 144 | 80   | 51  | 20  | 17  |
+| DIETERFOX         | 342 | 66  | 42   | 28  | 15  | 10  |
+| WOLFGANGNEJDL     | 387 | 94  | 58   | 39  | 19  | 14  |
+:END:
+*** Venue
+#+BEGIN_SRC clojure
+(doseq [a #{"ECML" "RECSYS" "NIPS" "NEURALNETWORKS"}
+        t [0.1 0.2 0.25 0.3 0.4 0.5]]
+  (println a t ": " (-> a (venue_view t) concepts count)))
+#+END_SRC
+:RESULT:
+|                |  0.1 | 0.2 | 0.25 | 0.3 | 0.4 | 0.5 |
+|----------------+------+-----+------+-----+-----+-----|
+| ECML           |  568 | 173 |  108 |  74 |  37 |  20 |
+| RECSYS         |  389 |  83 |   60 |  47 |  21 |  11 |
+| NIPS           | 2366 | 405 |  212 | 142 |  66 |  22 |
+| NEURALNETWORKS | 1368 | 261 |  155 | 107 |  43 |  21 |
+:END:

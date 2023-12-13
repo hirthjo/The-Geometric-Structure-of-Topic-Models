@@ -1,0 +1,80 @@
+* Conceptual Author/Venue Views Association rules
+** Namespase
+#+BEGIN_SRC clojure
+(ns conceptual-topic-views.rules
+  (:require
+   [conceptual-topic-views.core :refer :all]
+   [conexp.fca.implications :refer :all]))
+#+END_SRC
+
+** Conceptual Views
+*** Author Views
+#+BEGIN_SRC clojure
+(def thrun_view (zoomed_author_view "SEBASTIANTHRUN"))
+
+(def schoelkopf_view (zoomed_author_view "BERNHARDSCHÖLKOPF"))
+
+(def fox_view (zoomed_author_view "DIETERFOX"))
+
+(def nejdl_view (zoomed_author_view "WOLFGANGNEJDL"))
+#+END_SRC
+*** Venue Views
+#+BEGIN_SRC clojure
+(def ecml_view (zoomed_venue_view "ECML"))
+
+(def recsys_view (zoomed_venue_view "RECSYS"))
+
+(def nips_view (zoomed_venue_view "NIPS"))
+
+(def nn_view (zoomed_venue_view "NEURALNETWORKS"))
+#+END_SRC
+** Implications
+#+BEGIN_SRC clojure
+(defn implications [scale]
+  (-> scale
+      canonical-basis
+      (filter #(<= min-sup (support % scale)))))
+#+END_SRC
+*** Authors
+#+BEGIN_SRC clojure
+(implications fox_view)
+(implications schoelkopf_view)
+(implications thrun_view)
+(implications nejdl_view)
+#+END_SRC
+:RESULTS:
+:END:
+*** Venues
+#+BEGIN_SRC clojure
+(implications ecml_view)
+(implications recsys_view)
+(implications nips_view)
+(implications nn_view)
+#+END_SRC
+:RESULTS:
+Only Recsys has supported implications
+((#{"Classification, Mining"} ⟶  #{"Recommender Systems"})
+ (#{"Matrix Methods"} ⟶  #{"Recommender Systems"})
+ (#{"Learning, Knowledge Bases"} ⟶  #{"Recommender Systems"}))
+:END:
+** Association Rules
+#+BEGIN_SRC clojure
+(defn association-rules [scale]
+  (as-> scale $
+    (luxenburger-basis $ min-sup min-conf)
+    (map #(list % (support % scale) (confidence % scale)) $)))
+#+END_SRC
+*** Authors
+#+BEGIN_SRC clojure
+(association-rules fox_view)
+(association-rules schoelkopf_view)
+(association-rules thrun_view)
+(association-rules nejdl_view)
+#+END_SRC
+*** Venues
+#+BEGIN_SRC clojure
+(association-rules ecml_view)
+(association-rules recsys_view)
+(association-rules nips_view)
+(association-rules nn_view)
+#+END_SRC

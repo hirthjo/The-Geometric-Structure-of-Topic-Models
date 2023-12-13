@@ -1,0 +1,22 @@
+Bayesian Inference
+Search Engines
+Neural Networks
+Nonlinear Control
+Optimization
+Neurons, Dynamic Networks
+Classification, Mining
+Information Retrieval
+Social Media
+Clustering
+Learning, Knowledge Bases
+Semantic Web
+Recommender Systems
+Graphs
+Reinforcement Learning
+Planning & Reasoning
+Document Retrieval
+Feature Extraction
+Support Vector Machines
+Kernel Methods
+Matrix Methods
+Image Recognition
