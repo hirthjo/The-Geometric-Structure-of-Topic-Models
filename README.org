@@ -1,4 +1,7 @@
 * The Geometric Structure of Topic Models
+
+[[./pics/geometric_tm.jpg]]
+
 This repository contains the code used for our analysis in The
 *Geometric Structure of Topic Models*. The topic model was computed
 by [[https://doi.org/10.1007/s11192-021-03931-0][Topic space trajectories]] based on
